@@ -1,0 +1,13 @@
+name: DeathHorse
+version: 1.0.0
+main: dev.deathhorse.DeathHorse
+api-version: '26.1'
+description: Selected players respawn riding a saddled horse with diamond armor.
+commands:
+  deathhorse:
+    description: Manage which players respawn on a horse
+    usage: /deathhorse <add|remove|list> [player]
+    permission: deathhorse.admin
+permissions:
+  deathhorse.admin:
+    default: op
