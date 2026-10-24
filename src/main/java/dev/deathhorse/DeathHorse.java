@@ -23,7 +23,7 @@ public class DeathHorse extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
-        saveDefaultConfig();
+        
         getConfig().getStringList("players").forEach(s -> {
             try { selected.add(UUID.fromString(s)); } catch (IllegalArgumentException ignored) {}
         });
